@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  </style>
+  <body background="/static/background2.jpg">
+
+    <div class="backgroundCol">
+      <img src="static/logotext.png" style="width:115px;height:14px;margin:30px 30px;">
+    </div>
+	<div class="backgroundCol">
+      <img src="static/logo.png" style="width:150px;height:150px;margin:20px 685px;">
+    </div>
+	<br><br>
+
+    <div class="searches">
+      <input type="text" name="disaster" id = "disasterSearch" placeholder=""> <br>
+      <input type="submit" value="Submit" id="dataSubmit">
+    </div>
+
+    <br>
+    <br>
+	<br>
+    <br>
+	<br>
+    <br>
+
+    <div class="result">
+      <p id="resultHeader"></p>
+      <p id="disasterAnalysis"></p>
+
+    </div>
+	<br><br><br><br><br><br><br>
+    <div class="resultClass">
+      <p class="text">
+        <p style="text-align:center;">
+		<font color="white" size="3">
+        This software scrapes 10,000 of most recent tweets from Twitters API. These tweets are then processed,
+        looking for keywords matching a user-selected disaster. These locations are places with the most tweets
+        mentioning a disaster, potentially indicating to a crisis brewing in the region.
+		</font>
+      </p>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+    $.ajaxSetup({
+      data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+    });
+    </script>
+    <script type="text/javascript" src="/static/script.js">
+
+    </script>
+  </body>
+
+
+</html>

@@ -1,0 +1,107 @@
+  @import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  header{
+    background-color: transparent;
+    margin-top: 1px;
+  }
+
+  header > h1{
+    color: black;
+    font-family: Asap, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  body{
+    background-image: url("/static/background2.jpg");
+	background-position: center;
+	background-size: 1540px 850px;
+	background-attachment: fixed;
+  }
+
+  #disasterDescription > p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 25px;
+  }
+
+  .searches{
+    margin-top: 40px;
+    text-align: center;
+	border-radius: 8px;
+	
+  }
+
+  .searches > input[type=text] {
+	position:absolute;
+	left:40%;
+    top:40%;
+    width:30%;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+	border: 0px;
+  }
+
+  .searches > input[type=submit]{
+      width: 100px;
+      margin-bottom: 10px;
+  }
+
+  .result{
+
+    margin-top: 20px;
+  }
+
+  .result > h2{
+    font-family: Asap, sans-serif;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .result > #disasterAnalysis{
+    font-family: Asap, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #logo{
+    border-radius: 70%;
+  }
+
+  .resultTitle{
+    margin-top: 10px;
+    font-family: Asap, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+  }
+
+  .tweets{
+      margin: 10px;
+  }
+  
+  .center {
+  display: block;
+  margin-left: 20%;
+  width: 50%;
+  max-width:50%;
+  max-height:50%;
+  }
+  
+  
